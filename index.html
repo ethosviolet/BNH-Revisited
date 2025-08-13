@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Jacob Hobzek">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <title>Bear, Ninja, Hunter</title>
+    
+</head>
+<body>
+<div class=container><div class="child">
+<h2>Bear, Ninja, Hunter</h2>
+<section>
+  <p>Play against the computer!</p>
+  <ul>
+    <li>The Bear beats the Hunter.</li>
+    <li>The Hunter beats the Ninja.</li>
+    <li>And the Ninja beats the Bear.</li>
+  </ul>
+</section>
+<p>Click a button below to select your choice</p>
+</div>
+<div class="child">
+<hr>
+<button id="bearBtn" onclick="UserBear()">Bear</button> <button id="ninjaBtn" onclick="UserNinja()">Ninja</button> <button id="hunterBtn" onclick="UserHunter()">Hunter</button>
+<hr>
+</div>
+<div class="child">
+<h3 id="result"></h3>
+</div>
+<div class="child">
+<p><span id="wins"></span> 
+   <span id="losses"></span> 
+   <span id="ties"></span></p>
+</div>
+<div id="hide">
+<div class="child">
+<hr>
+<button onclick="playAgain()">Play Again?</button>
+<hr>
+</div>
+  </div>
+      </div>
+<script type="application/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
