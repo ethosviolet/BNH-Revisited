@@ -28,20 +28,20 @@
       document.getElementById("losses").style.display = "block" //hidden until executed
       document.getElementById("losses").innerHTML = `Computer Wins: ${lossCounter}` //losses displayed
       document.getElementById("ties").style.display = "block" //hidden until executed
-      document.getElementById("ties").innerHTML = `Ties: ${tieCounter}` //Ties display
-      document.getElementById("hide").style.display = "block"
-      document.getElementById("bearBtn").disabled = true;
+      document.getElementById("ties").innerHTML = `Ties: ${tieCounter}` //Ties displayed
+      document.getElementById("playButton").style.display = "block" //hidden until executed
+      document.getElementById("bearBtn").disabled = true; //disables play buttons
       document.getElementById("ninjaBtn").disabled = true;
       document.getElementById("hunterBtn").disabled = true;
   }
   function playAgain() {
-    document.getElementById("hide").style.display = "none"
-     document.getElementById("result").style.display = "none"
-     document.getElementById("bearBtn").disabled = false;
+    document.getElementById("playButton").style.display = "none" // hides "play Again?" button
+     document.getElementById("result").style.display = "none" // hides results display
+     document.getElementById("bearBtn").disabled = false; // clicking play again re enables the play buttons
     document.getElementById("ninjaBtn").disabled = false;
     document.getElementById("hunterBtn").disabled = false;
  }
-  function UserBear() 
+  function UserBear() //fighter values stored in functions that call to the buttons in html
   {playGame("Bear")};
   function UserNinja() 
   {playGame("Ninja")};
